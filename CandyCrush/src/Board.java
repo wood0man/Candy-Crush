@@ -30,8 +30,10 @@ public class Board {
 		boolean rowMatch = false;
 		boolean colMatch=false;
 		int colCounter=1;
-		rowCounter = 1;
 		for (int i = 0; i < this.boardSize; i++) {
+			rowCounter = 1;
+			colCounter=1;
+			colMatch=false;
 			rowMatch = false;
 			for (int j = 0; j < this.board[i].length - 1; j++) {
 				if (this.board[i][j].getColor() == this.board[i][j + 1].getColor()) {
